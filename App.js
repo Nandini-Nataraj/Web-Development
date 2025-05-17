@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     if (searchText) {
       console.log(searchText, "is the search text");
-      fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchText}&type=video&key=AIzaSyBEjKA-rtTUHVJk6O5OtN8DlslNUp-t4yE`)
+      fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchText}&type=video&key=YOUR_KEY`)
         .then(response => response.json())
         .then(data => {
           console.log(data);
